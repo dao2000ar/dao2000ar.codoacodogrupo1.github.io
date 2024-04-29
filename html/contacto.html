@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estiloform.css">
+	<link rel="stylesheet" href="../CSS/estilo.css">
+
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">JAVI APART</a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Servicios</a></li>
+				<!--<li><a href="#">Portafolio</a></li>-->
+                <!--<li><a href="./html/contacto.html">Contacto</a></li>-->
+			</ul>
+		</nav>
+
+	</header>
+
+<form action="#" target="" method="get" name="formDatosPersonales">
+
+	<label for="nombre">Nombre</label>
+	<input type="text" name="nombre" id="nombre" placeholder="nombre" required/>
+
+	<label for="apellidos">Apellidos</label>
+	<input type="text" name="apellidos" id="apellidos" placeholder="apellido" required/>
+
+	<label for="email" />Email</label>
+	<input type="email" name="email" id="email" placeholder="email" required />
+
+	<label for="asunto">Asunto</label>
+	<input type ="text" name="asunto" id="asunto" placeholder="asunto de la consulta"/>
+
+	<label for="mensaje">Mensaje</label>
+	<textarea name="mensaje" for="mensaje" placeholder="realice su consulta de menos de 300 carácteres" maxlength="300" required></textarea>
+	
+	<input type="submit" name="enviar" value="Enviar Datos"/>
+</form>
+
+</body>
+</html>
