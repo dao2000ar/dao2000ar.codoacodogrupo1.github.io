@@ -7,7 +7,7 @@ form{
     padding: 30px 20px;
  
     top: 150px;
-    left: 50px;
+    left: 15%;
 	width:750px;
 	padding:16px;
 	border-radius:10px;
@@ -58,3 +58,21 @@ textarea{
 	resize:none;
 	display:block;
 }
+footer {
+	text-align: center;
+	padding: 7px;
+	max-width: 8px;
+	position: fixed;
+	top: 180px;
+	right: 25px;
+
+		.icon {
+			margin-top: 12px;
+			display: inline-block;
+			font-size: 35px;
+            right: 25px;
+            color: #f5f511;
+            
+            
+		}
+	}

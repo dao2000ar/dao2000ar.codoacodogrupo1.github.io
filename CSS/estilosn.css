@@ -1,0 +1,17 @@
+body{
+    background-image: url(../imagen/hotel.jpg);
+}
+
+h1{
+    margin-left: 2%;
+    margin-top: 120px;
+}
+
+div.outer p { 
+    margin-left: 2%;
+    color:gold;
+}
+div:not(.outer) p { 
+    margin-left: 2%;
+    color: gold;
+}

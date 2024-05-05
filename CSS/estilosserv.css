@@ -1,0 +1,28 @@
+body{
+    background-image: url(../imagen/hotel.jpg);
+}
+
+p{
+background-color: lime;
+}
+
+h3{
+    background-color: lime;
+
+}
+
+.container1{
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-top: 150px;
+    position: absolute;
+}
+
+/*div.outer p { 
+    margin-left: 2%;
+    color:gold;
+}
+div:not(.outer) p { 
+    margin-left: 2%;
+    color: gold;
+}*/
