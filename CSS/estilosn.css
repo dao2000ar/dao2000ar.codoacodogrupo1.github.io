@@ -5,13 +5,16 @@ body{
 h1{
     margin-left: 2%;
     margin-top: 120px;
+    background-color: lime;
 }
 
 div.outer p { 
     margin-left: 2%;
     color:gold;
+    background-color: lime;
 }
 div:not(.outer) p { 
     margin-left: 2%;
     color: gold;
+    background-color: lime;
 }
