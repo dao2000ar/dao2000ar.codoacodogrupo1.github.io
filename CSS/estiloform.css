@@ -1,15 +1,11 @@
-*{box-sizing:border-box;}
 
 form{
-    position: fixed;
-    justify-content: center;
+	
     transition: 0.7s;
     padding: 30px 20px;
  
-    top: 150px;
-    left: 15%;
+    
 	width:750px;
-	padding:16px;
 	border-radius:10px;
 
 	background-color:#ccc;

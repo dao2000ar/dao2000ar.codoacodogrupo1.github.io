@@ -4,16 +4,135 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url(../imagen/hotel.jpg);
-    background-size: cover;
-    position:static;
+
+.container{
+    background-image: url(../imagen/fondo-hotel.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 100vh;
+    padding-top: 20%;
+    padding-left: 20%;
+   
+}
+.titulo{
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+.parrafo-titulo{
+    padding-bottom: 1em;
+}
+
+.boton {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
     
 }
+.logo{
+    width: 30px;
+}
+.logo.abajo{
+    background-color: #fff;
+    width: 20px;
+}
+.boton:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.boton:active {
+	position:relative;
+	top:1px;
+}
+
+/* ACA EMPIEZA EL CODIGO DE LA GALERIA */
+.intro{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4em;
+    font-size: 1.5em;
+}
+.accordian {
+	width: 805px; height: 320px;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 160px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+	display: block;
+}
+
+/*Image title styles*/
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+    width: 100%;	
+
+}
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 16px;
+}
+
+/* ACA TERMINAN LOS ESTILOS DE LA GALERIA */
 
 header{
     position: fixed;
-    top: 0;
+    top: 20;
     left: 0;
     width: 100%;
     display: flex;
@@ -23,7 +142,7 @@ header{
     z-index: 10;
 }
 header.abajo{
-    background: #370854;
+    background: #D5D493;
     padding: 30px 20px;
 }
 header .logo{
@@ -72,6 +191,7 @@ header ul li a:hover{
     color: #fffe;
 }
 
+
 .container-img{
     width: 100%;
     max-width: 1100px;
@@ -91,12 +211,12 @@ header ul li a:hover{
 
 }
 
-.container-img .box-img img{
+/* .container-img .box-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
    
-}
+} */
 
 .container-img .box-img:nth-child(1){
     grid-column-start: span 1;
@@ -113,30 +233,75 @@ grid-column-start: span 1;
 }
 .container-img .box-img {overflow:hidden;}
 
-@media screen and (max-width: 800px){
-    .container-img{
-        width: 95%;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        grid-gap: 10px;
+form h4{
+    padding-bottom: 1em ;
+}
+.divform{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    background-image: url(../imagen/fondo-hotel.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 80vh;
+    
+}
+
+@media screen and (max-width: 960px){
+    .parrafo-titulo{
+        padding-bottom: 1em;
+        width: 85%;
     }
-    .container-img .box-img:nth-child(1){
-        grid-column-start: span 1;
+    .titulo{
+        font-size: 2.5em;
+        margin-bottom: 0.2em;
+        width: 85%;
     }
+    .formdiv{
+        display: flex;
+        flex-direction: column;
+        max-width: 60vh;
+        margin: 0 auto;
+    }
+    .divform{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .container{
+        background-image: url(../imagen/fondo-hotel.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+        height: 70vh;
+        padding-top: 20%;
+        padding-left: 20%;
+       
+    }
+
     
 }
 
 @media screen and (max-width: 500px){
-    .container-img{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-      
 
+    .parrafo-titulo{
+        padding-bottom: 1em;
+        width: 85%;
     }
-    .container-img .box-img:nth-child(1){
-        height: 200px;
+    .titulo{
+        font-size: 2.5em;
+        margin-bottom: 0.2em;
+        width: 85%;
     }
-    
+
+    .formdiv{
+        display: flex;
+        flex-direction: column;
+        max-width: 60vh;
+        margin: 0 auto;
+    }
 }
 
 
@@ -158,7 +323,7 @@ grid-column-start: span 1;
 }*/
 header.abajo .logo,
 header.abajo ul li a{
-    color: #fffa66;
+    color: #817c00;
 }
 
 footer {
@@ -175,7 +340,7 @@ footer {
             display: inline-block;
 			font-size: 35px;
             right: 25px;
-            color: #f5f511;
+            color: #2b2a01  ;
             
             
 		}

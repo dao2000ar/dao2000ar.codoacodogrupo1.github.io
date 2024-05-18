@@ -11,7 +11,7 @@
 </head>
 <body>
 	<header>
-		<a href="#" class="logo">JAVI APART</a>
+		<img class="logo" src="/imagen/logo.png" alt="Javi Apart">
 		<nav>
 			<ul>
 				<li><a href="../index.html">Inicio</a></li>
@@ -23,8 +23,12 @@
 		</nav>
 
 	</header>
+	
 
-	<form action="#" target="" method="get" name="formDatosPersonales">
+	<div class="divform">
+		<h1 class="">Contactanos</h1>
+
+	<form class="formdiv" action="#" target="" method="get" name="formDatosPersonales">
 
 		<label for="nombre">Nombre</label>
 		<input type="text" name="nombre" id="nombre" placeholder="nombre" required/>
@@ -32,7 +36,7 @@
 		<label for="apellidos">Apellidos</label>
 		<input type="text" name="apellidos" id="apellidos" placeholder="apellido" required/>
 
-		<label for="email" />Email</label>
+		<label for="email">Email</label>
 		<input type="email" name="email" id="email" placeholder="email" required />
 
 		<label for="asunto">Asunto</label>
@@ -40,9 +44,18 @@
 
 		<label for="mensaje">Mensaje</label>
 		<textarea name="mensaje" for="mensaje" placeholder="realice su consulta de menos de 300 carácteres" maxlength="300" required></textarea>
+		<h4>¿Viaja con Mascotas?</h4>
 		
-		<input type="submit" name="enviar" value="Enviar Datos"/>
+		<input type="checkbox" id="no" name="no_acepta" value="Si">
+		<label for="no_acepta">Si</label><br>
+		
+		<input type="submit" class="boton" name="enviar" value="Enviar Datos"/>
 	</form>
+
+	</div>
+	<h3>Datos Útiles:</h3>
+	<h4>Direccion: Libertador 1000</h4>
+	<h4>Telefono: 2902 491500</h4>
 
 	<footer>
 
