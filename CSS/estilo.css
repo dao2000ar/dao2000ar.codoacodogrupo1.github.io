@@ -82,7 +82,7 @@
 }
 .accordian {
 	width: 805px; height: 320px;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	
 	/*Time for some styling*/
 	margin: 100px auto;
@@ -128,6 +128,7 @@
 
 .accordian li img {
 	display: block;
+    
 }
 
 /*Image title styles*/
