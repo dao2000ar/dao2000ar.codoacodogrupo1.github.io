@@ -1,20 +1,20 @@
 body{
-    background-image: url(../imagen/hotel.jpg);
+    background-image: url(../imagen/fondo-hotel.jpg);
 }
 
 h1{
     margin-left: 2%;
     margin-top: 120px;
-    background-color: lime;
+    /*background-color: lime;*/
 }
 
 div.outer p { 
     margin-left: 2%;
-    color:gold;
-    background-color: lime;
+    /*color:gold;
+    background-color: lime;*/
 }
 div:not(.outer) p { 
     margin-left: 2%;
-    color: gold;
-    background-color: lime;
+    /*color: gold;
+    background-color: lime;*/
 }
